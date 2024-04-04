@@ -39,6 +39,10 @@ function to check if the inputs within the form are right to be submitted, curre
 functions within the javascript file control the colour of the background. They correspond to a certain button on the top of the page and whenever they get clicked the onclick attribute within
 the button element triggers the corresponding function within the javascript file.
 
+HOSTED WEBSITE:
+https://wildlifefriend.github.io
+--------------------------------
+
 Citations:
 Home.png: Anon. 2018. House Free Icons designed by kiranshastry. (May 2018). Retrieved February 8, 2024 from https://www.flaticon.com/free-icon/house_845022 
 
