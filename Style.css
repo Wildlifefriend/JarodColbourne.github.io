@@ -1,0 +1,240 @@
+*{
+    color:white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+body
+{
+    background: #020F20;
+}
+/* basic flex features for the container class and navigation bar */
+.container,.Nav,.Contact
+{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.container2
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#item
+{
+    width:45%;
+    height:20em;
+    align-items: center;
+    text-align: justify;
+}
+.Nav
+{
+    background-color: #072b54;  
+}
+.Contact
+{
+    background-color: #072b54;
+    justify-content:center;  
+}
+a,a:visited
+{
+    text-decoration: none;
+    color: rgb(215, 140, 0);
+}
+.text:hover
+{
+    font-size: 125%;
+    box-shadow:0 25px 25px 0 #0000005f;
+}
+.text
+{
+    padding-top:1%;
+    text-align: center;
+}
+
+
+/* Code For Grid Changes in Hobbies page */
+
+
+
+
+
+
+h3 + p
+{
+    font-size: larger;
+}
+
+h2 ~ p
+{
+    font-size: large;
+}
+/* End of Grid 2 */
+
+
+
+/* For the navigation bar */
+
+form {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 150%;
+    flex-wrap: wrap;
+    margin-left:33%;
+    width:33%;
+    text-align: center;
+    align-items: center;
+    background-color: #172f49;
+    border: solid black;
+    border-radius: 5%;
+}
+
+input,textarea {
+    background-color: #003d82;
+    width:95%;
+}
+/* For the navigation bar */
+
+#colour 
+{
+    display:flex;
+    width:20%;
+}
+#default
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color:#006eff;
+    font-size:larger;
+    color:#FFFFFF;
+}
+#purple
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color:#9d009d;
+    font-size:larger;
+    color:#01fffb;
+}
+#green
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color:#00ff00;
+    font-size:larger;
+    color:#004299;
+}
+
+/* For the Opening Screen of the site */
+#TitleScreen
+{
+    background-image:url(Images/space.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover ;
+    font-size: 1700%;
+    text-align: center;
+    text-wrap:wrap;
+}
+/* For the Opening Screen of the site */
+
+
+
+/* Create a function to increase the size of a clickable image */
+a > img
+{
+    width: 45px;
+    border-color: rgba(0, 0, 0, 0.441);
+    border-width: 5px;
+    border:100%;
+    border-style: ridge;
+    background-color:rgba(0, 119, 255, 0.247);
+    z-index: 6;
+}
+/* Create a function to increase the size of a clickable image */
+
+
+
+/* Home Page information */
+.About_Me,.Images,.extra
+{
+    text-align: justify;
+    
+    color: rgb(255, 166, 0);
+}
+.Images
+{
+    text-align: center;
+}
+#Info_Image
+{
+    width: 75%;
+    border-style: ridge;
+    border-width: 0.5%;
+    border-color:white;
+}
+/* Home Page information */
+
+
+
+
+/* Added for Responsiveness */
+@media screen and (min-width: 960px)
+{
+    .About_Me,.Images,.extra
+    {
+        width:30%;
+    } 
+}
+
+@media screen and (max-width: 960px)
+{
+    .About_Me,.Images,.extra
+    {
+        width:50%;
+        font-size: 150%;
+    } 
+    .Info_Image
+    {
+        width: 30%;
+    }  
+    #TitleScreen 
+    {
+        font-size: 1000%;
+    }
+    #item
+    {
+        width:100%;
+        font-size:150%;
+    }
+    video,iframe,audio
+    {
+        width:75%;
+        height:75%;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    p{
+        font-size: 50%;
+    }
+    .About_Me,.Images,.extra
+    {
+        width:100%;
+        font-size: 120%;
+    } 
+    .Info_Image
+    {
+        width: 30%;
+    }  
+    #item
+    {
+        width:100%;
+        font-size:125%;
+    }
+    video,iframe,audio
+    {
+        width:100%;
+        height:75%;
+    }
+}

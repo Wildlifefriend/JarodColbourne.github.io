@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/CSharpIcon.png">
+    <link rel="stylesheet" href="Style.css">
+    <title>Jarod Colbourne</title>
+
+    <nav class = "Nav" id="Nav">
+        <div class = "text">
+            <a href="Hobbies.html">Hobbies and Interests</a>
+        </div>
+        <div>
+            <a href="index.html"><img src="Images/Home.png" width="40" alt="Home page"></a>
+        </div>
+        <div class = "text">
+            <a href="Education.html">Education and Goals</a>
+        </div>
+    </nav>
+    <hr>
+    <div id="colour">
+        <input type="button" onclick="ColourChange1()" id="default" value="Default">
+        <input type="button" onclick="ColourChange2()" id="purple" value="Purple">
+        <input type="button" onclick="ColourChange3()" id="green" value="Green">
+    </div>
+</head>
+<body id="body">                                                   
+    
+
+    <hr>
+    <!-- Please add a section so I can do the opening background image/Text Wall  -->
+    <div class="container", id="TitleScreen">
+        <p>Hello World</p>
+    </div>
+    <hr>
+    <!-- code for the About me, image and more information section of the home page  -->
+    <div class = "container">
+        <article class = "About_Me">
+            <h2><u>About Me</u></h2>
+            <p>
+                Hey, my name is Jarod Colbourne and I'm a first year Computer Science student at Dalhousie University going for my bachelors.
+                I enjoy reading, playing curling and a multitude of video games.
+            </p>
+        </article>
+        <div class = "Images">
+            <img id = "Info_Image" src="Images/sleepyJardo.png" alt="Was supposed to be a picture of me">
+        </div>
+        <article class = "extra">
+            <h2><u>Extra Information</u></h2>
+            <p>
+                I have current interests in programming and hope in the future to solve many problems with the use of programming.
+                I also have some interest in game development and how the behind the scenes of game development works.
+            </p>
+        </article>
+    </div>
+    <hr>
+        <form id="Form" action="index.html">
+            <label><u>Send a Message!</u></label>
+    
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" id="fname" placeholder="John">
+    
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname" placeholder="Doe">
+    
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="fortnite@gmail.com">
+    
+                <label for="message">Message:</label>
+                <textarea type="text" name="message" id="message" placeholder="I love among us"></textarea>
+    
+                <label>Do you allow this message to be sent:</label>
+                <div>
+                    <input type="radio" name="agree" value="Yes" id="agree">
+                    <label for="agree">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="agree" value="No" id="agree">
+                    <label for="agree">No</label>
+                </div>
+           
+            <input type="submit" id="submit">
+        </form>    
+</body>
+
+<footer>
+    <hr>
+    <div class = "Contact">
+        <div>
+            <a href="mailto: jr75576@dal.ca"><img src="Images/MailIcon.png" alt="Click Here to send me an Email"></a>
+        </div>
+        <div>
+            <a href="https://github.com/Wildlifefriend"><img src="Images/GithubIcon.png" alt="Click here to check out my github"></a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/@Wildlifefriend_"><img src = "Images/YoutubeIcon.png" alt="Click here to check out my youtube channel"></a>
+        </div>
+    </div>
+</footer>
+<script src = "script.js"></script>
+</html>
